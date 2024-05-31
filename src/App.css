@@ -50,6 +50,9 @@ th {
   color: #404756;
   max-height: 6vh;
 }
+tbody{
+    height: 60vh;
+}
 
 td,
 th {
