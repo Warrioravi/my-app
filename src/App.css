@@ -1,38 +1,98 @@
-.App {
+.userGrid {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.pageBox,
+.activePageBox {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 30px;
+  width: 60px;
+  margin: 1px;
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.pageBox {
+  background-color: #48434eb9;
+  color: white;
+  border: 1px solid rgba(216, 216, 216, 0.158);
+}
+
+.activePageBox {
+  background-color: #58c4dc;
+  color: #404756;
+}
+.pageBox:hover {
+   background-color: #757679c2;
+}
+
+.userListWrapper {
+  border-radius: 5vh;
+  width: fit-content;
+  margin: auto;
+  height: 72vh;
+}
+
+table {
+  height: 100%;
+  background-color: #333a45;
+  color: #f6f7f9;
+  font-size: 12px !important;
+}
+
+th {
+  background-color: #58c4dc;
+  color: #404756;
+  max-height: 6vh;
+}
+
+td,
+th {
+  height: 6vh;
+  margin-right: 10px;
+  width: 12vw;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userHeader {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #f6f7f9;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0px;
+  height: 5vh;
 }
 
-.App-link {
-  color: #61dafb;
+.paginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  height: 8vh;
+  width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.id {
+  width: 5vw !important;
+}
+#overlayWrapper{
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.336);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vh;
+  color: #58c4dc;
 }
